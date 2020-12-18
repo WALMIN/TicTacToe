@@ -14,6 +14,7 @@
 		A677DB5E258BED34006EAF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A677DB5C258BED34006EAF4A /* Main.storyboard */; };
 		A677DB60258BED35006EAF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A677DB5F258BED35006EAF4A /* Assets.xcassets */; };
 		A677DB63258BED35006EAF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A677DB61258BED35006EAF4A /* LaunchScreen.storyboard */; };
+		A6B2EEE7258CD9B50005BB88 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B2EEE6258CD9B50005BB88 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A677DB5F258BED35006EAF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A677DB62258BED35006EAF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A677DB64258BED35006EAF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B2EEE6258CD9B50005BB88 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				A677DB56258BED34006EAF4A /* AppDelegate.swift */,
+				A677DB5F258BED35006EAF4A /* Assets.xcassets */,
+				A67131E1258CC28B00F3AB64 /* Game.swift */,
+				A677DB64258BED35006EAF4A /* Info.plist */,
+				A677DB61258BED35006EAF4A /* LaunchScreen.storyboard */,
+				A677DB5C258BED34006EAF4A /* Main.storyboard */,
+				A6B2EEE6258CD9B50005BB88 /* Player.swift */,
 				A677DB58258BED34006EAF4A /* SceneDelegate.swift */,
 				A677DB5A258BED34006EAF4A /* ViewController.swift */,
-				A677DB5C258BED34006EAF4A /* Main.storyboard */,
-				A677DB5F258BED35006EAF4A /* Assets.xcassets */,
-				A677DB61258BED35006EAF4A /* LaunchScreen.storyboard */,
-				A677DB64258BED35006EAF4A /* Info.plist */,
-				A67131E1258CC28B00F3AB64 /* Game.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				A677DB5B258BED34006EAF4A /* ViewController.swift in Sources */,
 				A677DB57258BED34006EAF4A /* AppDelegate.swift in Sources */,
 				A677DB59258BED34006EAF4A /* SceneDelegate.swift in Sources */,
+				A6B2EEE7258CD9B50005BB88 /* Player.swift in Sources */,
 				A67131E2258CC28B00F3AB64 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
