@@ -16,92 +16,120 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-Ug-eHX">
+                                <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-fU-1nL">
                                 <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
                                 <subviews>
-                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2i3-tu-eYP">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2i3-tu-eYP">
                                         <rect key="frame" x="0.0" y="0.0" width="113.5" height="341"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-di-yiE">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113.5"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15V-eH-sp0"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plo-mr-KVe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGW-7I-6He">
                                                 <rect key="frame" x="0.0" y="113.5" width="113.5" height="114"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAI-c0-LQg"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hn-gl-SLv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-ZG-o85">
                                                 <rect key="frame" x="0.0" y="227.5" width="113.5" height="113.5"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fT3-ga-8VN"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4KR-pi-BER"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-Ga-MlL">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-Ga-MlL">
                                         <rect key="frame" x="113.5" y="0.0" width="114" height="341"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3e-XB-W6P">
                                                 <rect key="frame" x="0.0" y="0.0" width="114" height="113.5"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctU-Tm-PEt"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mq3-h0-rwp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-Bu-Beq">
                                                 <rect key="frame" x="0.0" y="113.5" width="114" height="114"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMu-eP-dqN"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6U-7K-Tgx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-MO-vZh">
                                                 <rect key="frame" x="0.0" y="227.5" width="114" height="113.5"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBf-RP-Yhe"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QyT-UN-vW1"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-VB-Hbi">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dn5-VB-Hbi">
                                         <rect key="frame" x="227.5" y="0.0" width="113.5" height="341"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QES-Ko-J9I">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113.5"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3cy-ua-Bed"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7I-gW-e71"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wu-gK-7Bh">
                                                 <rect key="frame" x="0.0" y="113.5" width="113.5" height="114"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6VM-ja-02t"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JqC-iG-GJW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-fh-wHn">
+                                            <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-fh-wHn">
                                                 <rect key="frame" x="0.0" y="227.5" width="113.5" height="113.5"/>
-                                                <state key="normal" backgroundImage="cross"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
                                                 <connections>
-                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDE-5U-91b"/>
+                                                    <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAE-V1-2Zh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-Ug-eHX">
-                                <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -125,7 +153,9 @@
     </scenes>
     <resources>
         <image name="board" width="341.33334350585938" height="341.33334350585938"/>
-        <image name="cross" width="48" height="48"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
