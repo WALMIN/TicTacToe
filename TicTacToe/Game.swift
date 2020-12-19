@@ -11,6 +11,8 @@ import UIKit
 class Game {
     
     // Views
+    var itemButtons: [UIButton]!
+    
     var turnLabel: UILabel!
     var xLabel: UILabel!
     var yLabel: UILabel!
@@ -36,13 +38,14 @@ class Game {
         
     }
     
-    func initializeViews(_ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
+    func initializeViews(_ itemButtons: [UIButton]!, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
+        self.itemButtons = itemButtons
+        
         self.turnLabel = turnLabel
         self.xLabel = xLabel
         self.yLabel = yLabel
         
         turnLabel.text = "\(player1.name)'s turn"
-        
         xLabel.text = "X | \(player1.name): \(player1.wins)"
         yLabel.text = "Y | \(player2.name): \(player2.wins)"
         
@@ -120,8 +123,18 @@ class Game {
     }
     
     func resetGame() {
-        
+        // Current game values
+        currentPlayer = player1
+        gameRunning = true
+        board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+        totalItems = 0
  
+        // Clear the board
+        for i in 0...8 {
+            itemButtons[i].setBackgroundImage(nil, for: .normal)
+            
+        }
+        
     }
     
 }

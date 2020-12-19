@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var itemButtons: [UIButton]!
+    
     @IBOutlet weak var turnLabel: UILabel!
     @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var yLabel: UILabel!
@@ -18,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        game.initializeViews(turnLabel, xLabel, yLabel)
+        game.initializeViews(itemButtons, turnLabel, xLabel, yLabel)
         
     }
 

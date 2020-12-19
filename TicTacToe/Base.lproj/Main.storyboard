@@ -173,6 +173,15 @@
                         <outlet property="turnLabel" destination="tT0-5Q-ctn" id="18q-T6-2dt"/>
                         <outlet property="xLabel" destination="E6B-ta-YRi" id="Vqm-EF-Bgs"/>
                         <outlet property="yLabel" destination="fy3-jH-C1i" id="LmE-nM-btB"/>
+                        <outletCollection property="itemButtons" destination="KAh-di-yiE" collectionClass="NSMutableArray" id="008-VW-DjS"/>
+                        <outletCollection property="itemButtons" destination="q3e-XB-W6P" collectionClass="NSMutableArray" id="XaG-HH-YHK"/>
+                        <outletCollection property="itemButtons" destination="QES-Ko-J9I" collectionClass="NSMutableArray" id="ihI-xp-vtp"/>
+                        <outletCollection property="itemButtons" destination="bGW-7I-6He" collectionClass="NSMutableArray" id="hxr-fO-Rrc"/>
+                        <outletCollection property="itemButtons" destination="uJ0-Bu-Beq" collectionClass="NSMutableArray" id="X8X-NI-9zo"/>
+                        <outletCollection property="itemButtons" destination="0Wu-gK-7Bh" collectionClass="NSMutableArray" id="OMy-KK-Uat"/>
+                        <outletCollection property="itemButtons" destination="SgY-ZG-o85" collectionClass="NSMutableArray" id="sF5-JG-gVA"/>
+                        <outletCollection property="itemButtons" destination="qcb-MO-vZh" collectionClass="NSMutableArray" id="Yfs-pB-zWX"/>
+                        <outletCollection property="itemButtons" destination="Gc0-fh-wHn" collectionClass="NSMutableArray" id="CUD-Nc-M29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
