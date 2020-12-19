@@ -130,25 +130,54 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name's turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT0-5Q-ctn">
+                                <rect key="frame" x="144" y="184.5" width="126" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X | Name: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-ta-YRi">
+                                <rect key="frame" x="20" y="642.5" width="84" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O | Name: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy3-jH-C1i">
+                                <rect key="frame" x="308.5" y="642.5" width="85.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="E6B-ta-YRi" firstAttribute="top" secondItem="Wu7-Ug-eHX" secondAttribute="bottom" constant="24" id="5gP-xx-i5Z"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="bottom" secondItem="A1E-fU-1nL" secondAttribute="bottom" id="9Ve-ZW-kHU"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="top" secondItem="A1E-fU-1nL" secondAttribute="top" id="BG8-bi-Yok"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CMK-rQ-Vn3"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="leading" secondItem="A1E-fU-1nL" secondAttribute="leading" id="FJR-XY-zRg"/>
+                            <constraint firstItem="E6B-ta-YRi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jyc-gx-BFj"/>
+                            <constraint firstItem="tT0-5Q-ctn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lwc-ag-kKo"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Muf-gE-hYY"/>
+                            <constraint firstItem="Wu7-Ug-eHX" firstAttribute="top" secondItem="tT0-5Q-ctn" secondAttribute="bottom" constant="64" id="NH2-Yc-d3J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fy3-jH-C1i" secondAttribute="trailing" constant="20" id="Svm-bD-8x2"/>
                             <constraint firstItem="A1E-fU-1nL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c6B-Ce-FIi"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="trailing" secondItem="A1E-fU-1nL" secondAttribute="trailing" id="dPl-Ud-i7c"/>
                             <constraint firstItem="A1E-fU-1nL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhJ-Vj-25E"/>
+                            <constraint firstItem="fy3-jH-C1i" firstAttribute="top" secondItem="Wu7-Ug-eHX" secondAttribute="bottom" constant="24" id="sQs-QZ-eNB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="turnLabel" destination="tT0-5Q-ctn" id="18q-T6-2dt"/>
+                        <outlet property="xLabel" destination="E6B-ta-YRi" id="Vqm-EF-Bgs"/>
+                        <outlet property="yLabel" destination="fy3-jH-C1i" id="LmE-nM-btB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="89"/>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>

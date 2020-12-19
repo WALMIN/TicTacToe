@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var turnLabel: UILabel!
+    @IBOutlet weak var xLabel: UILabel!
+    @IBOutlet weak var yLabel: UILabel!
+    
     let game = Game()
     
     override func viewDidLoad() {
