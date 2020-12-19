@@ -10,9 +10,16 @@ import UIKit
 
 class Game {
     
+    // Views
+    var turnLabel: UILabel!
+    var xLabel: UILabel!
+    var yLabel: UILabel!
+    
+    // Players
     let player1 = Player(id: 1, name: "Victor", wins: 0)
     let player2 = Player(id: 2, name: "Felicia", wins: 0)
     
+    // Game
     var currentPlayer: Player
     var gameRunning = true
     var board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
@@ -29,6 +36,18 @@ class Game {
         
     }
     
+    func initializeViews(_ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
+        self.turnLabel = turnLabel
+        self.xLabel = xLabel
+        self.yLabel = yLabel
+        
+        turnLabel.text = "\(player1.name)'s turn"
+        
+        xLabel.text = "X | \(player1.name): \(player1.wins)"
+        yLabel.text = "Y | \(player2.name): \(player2.wins)"
+        
+    }
+    
     func place(button: UIButton){
         // Check if position is free & game is running
         if board[button.tag] == 0 && gameRunning {
@@ -40,10 +59,12 @@ class Game {
             if currentPlayer.id == 1 {
                 button.setBackgroundImage(UIImage(named: "nought"), for: .normal)
                 currentPlayer = player2
+                turnLabel.text = "\(player2.name)'s turn"
                 
             } else {
                 button.setBackgroundImage(UIImage(named: "cross"), for: .normal)
                 currentPlayer = player1
+                turnLabel.text = "\(player1.name)'s turn"
                 
             }
             
@@ -63,11 +84,15 @@ class Game {
                 // Check which player won & show that
                 if board[combination[0]] == 1 {
                     player1.wins += 1
-                    print("WINNER: \(player1.name) / \(player1.wins)")
+                    
+                    turnLabel.text = "\(player1.name) won"
+                    xLabel.text = "X | \(player1.name): \(player1.wins)"
                     
                 } else {
                     player2.wins += 1
-                    print("WINNER: \(player2.name) / \(player2.wins)")
+                    
+                    turnLabel.text = "\(player2.name) won"
+                    yLabel.text = "O | \(player2.name): \(player2.wins)"
                     
                 }
                 
@@ -79,7 +104,7 @@ class Game {
             } else {
                 // If the board is full there was a draw
                 if totalItems == 9 {
-                    print("DRAW")
+                    turnLabel.text = "Draw"
                     
                     gameRunning = false
                     resetGame()

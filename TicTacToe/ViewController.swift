@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        game.initializeViews(turnLabel, xLabel, yLabel)
+        
     }
 
     @IBAction func placeItem(_ sender: UIButton) {
