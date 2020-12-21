@@ -31,6 +31,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playButton:" destination="eV7-y5-x7g" eventType="touchUpInside" id="yKM-E5-QZv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-I8-J2k">
                                         <rect key="frame" x="0.0" y="77" width="196" height="61"/>
@@ -68,15 +71,18 @@
                             <constraint firstItem="g9R-rD-nhW" firstAttribute="top" secondItem="pGO-lD-Fv7" secondAttribute="bottom" constant="64" id="b1c-aK-52I"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="PlayWithFriend" id="Eak-HN-6hY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKk-gL-SUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-865.21739130434787" y="88.392857142857139"/>
+            <point key="canvasLocation" x="-807" y="88"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,6 +240,7 @@
                             <constraint firstItem="fy3-jH-C1i" firstAttribute="top" secondItem="Wu7-Ug-eHX" secondAttribute="bottom" constant="24" id="sQs-QZ-eNB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7vx-vh-8or"/>
                     <connections>
                         <outlet property="turnLabel" destination="tT0-5Q-ctn" id="18q-T6-2dt"/>
                         <outlet property="xLabel" destination="E6B-ta-YRi" id="Vqm-EF-Bgs"/>
