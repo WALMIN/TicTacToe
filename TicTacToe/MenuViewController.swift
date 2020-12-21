@@ -9,13 +9,14 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    let seguePlayWithFriend = "PlayWithFriend"
+    let seguePlayWithFriend = "playWithFriend"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
+    // Start a game
     @IBAction func playButton(_ sender: UIButton) {
         performSegue(withIdentifier: seguePlayWithFriend, sender: self)
         
@@ -28,5 +29,7 @@ class MenuViewController: UIViewController {
         }
     
     }
+    
+    @IBAction func unwindToMenu(_ unwindSegue: UIStoryboardSegue) {}
     
 }
