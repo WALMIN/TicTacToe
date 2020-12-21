@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        game.initializeViews(itemButtons, turnLabel, xLabel, yLabel)
+        game.initialize(itemButtons, turnLabel, xLabel, yLabel)
         
     }
 

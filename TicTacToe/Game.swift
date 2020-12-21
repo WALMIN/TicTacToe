@@ -22,7 +22,7 @@ class Game {
     let player2 = Player(id: 2, name: "Felicia", wins: 0)
     
     // Game
-    var currentPlayer: Player
+    var currentPlayer: Player!
     var gameRunning = true
     var board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
     var totalItems = 0
@@ -32,15 +32,11 @@ class Game {
         /* Vertical */ [0, 3, 6], [1, 4, 7], [2, 5, 8],
         /* Diagonal */ [0, 4, 8], [2, 4, 6]
     ]
-
-    init(){
+    
+    func initialize(_ itemButtons: [UIButton]!, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
         currentPlayer = player1
         
-    }
-    
-    func initializeViews(_ itemButtons: [UIButton]!, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
         self.itemButtons = itemButtons
-        
         self.turnLabel = turnLabel
         self.xLabel = xLabel
         self.yLabel = yLabel
@@ -123,7 +119,7 @@ class Game {
     }
     
     func resetGame() {
-        // Current game values
+        // Reset game values
         currentPlayer = player1
         gameRunning = true
         board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
