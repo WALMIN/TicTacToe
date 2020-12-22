@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let unwindToMenu = "unwindToMenu"
+    
     @IBOutlet var itemButtons: [UIButton]!
     
     @IBOutlet weak var turnLabel: UILabel!
@@ -43,7 +45,7 @@ class ViewController: UIViewController {
         // Exit to menu
         alert.addAction(
             UIAlertAction(title: "Yes", style: .default) { action in
-                self.performSegue(withIdentifier: "unwindToMenu", sender: self)
+                self.performSegue(withIdentifier: self.unwindToMenu, sender: self)
             }
         )
         
