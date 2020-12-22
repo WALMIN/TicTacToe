@@ -45,8 +45,8 @@ class Game {
         self.yLabel = yLabel
         
         turnLabel.text = "\(player1.name)'s turn"
-        xLabel.text = "X | \(player1.name): \(player1.wins)"
-        yLabel.text = "Y | \(player2.name): \(player2.wins)"
+        xLabel.text = "\(player1.name): \(player1.wins)"
+        yLabel.text = "\(player2.name): \(player2.wins)"
         
     }
     
@@ -59,12 +59,12 @@ class Game {
             
             // Place item & switch player
             if currentPlayer.id == 1 {
-                button.setBackgroundImage(UIImage(named: "nought"), for: .normal)
+                button.setBackgroundImage(UIImage(named: "cross"), for: .normal)
                 currentPlayer = player2
                 turnLabel.text = "\(player2.name)'s turn"
                 
             } else {
-                button.setBackgroundImage(UIImage(named: "cross"), for: .normal)
+                button.setBackgroundImage(UIImage(named: "nought"), for: .normal)
                 currentPlayer = player1
                 turnLabel.text = "\(player1.name)'s turn"
                 
@@ -88,13 +88,13 @@ class Game {
                     player1.wins += 1
                     
                     turnLabel.text = "\(player1.name) won"
-                    xLabel.text = "X | \(player1.name): \(player1.wins)"
+                    xLabel.text = "\(player1.name): \(player1.wins)"
                     
                 } else {
                     player2.wins += 1
                     
                     turnLabel.text = "\(player2.name) won"
-                    yLabel.text = "O | \(player2.name): \(player2.wins)"
+                    yLabel.text = "\(player2.name): \(player2.wins)"
                     
                 }
                 
