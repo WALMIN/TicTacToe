@@ -17,11 +17,16 @@ class ViewController: UIViewController {
     
     let game = Game()
     
+    var player1Name: String!
+    var player2Name: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Initialize the game
-        game.initialize(itemButtons, turnLabel, xLabel, yLabel)
+        game.initialize(Player(id: 1, name: player1Name, wins: 0),
+                        Player(id: 2, name: player2Name, wins: 0),
+                        itemButtons, turnLabel, xLabel, yLabel)
         
     }
 

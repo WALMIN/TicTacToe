@@ -73,7 +73,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HD9-ZV-TA8"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="PlayWithFriend" id="Eak-HN-6hY"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="playWithFriend" id="Eak-HN-6hY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKk-gL-SUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -23,8 +23,11 @@ class MenuViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Pass player names to game
         if segue.identifier == seguePlayWithFriend {
-            _ = segue.destination as! ViewController
+            let gameVC = segue.destination as! ViewController
+            gameVC.player1Name = "Mario"
+            gameVC.player2Name = "Luigi"
                         
         }
     

@@ -10,17 +10,6 @@ import UIKit
 
 class Game {
     
-    // Views
-    var itemButtons: [UIButton]!
-    
-    var turnLabel: UILabel!
-    var xLabel: UILabel!
-    var yLabel: UILabel!
-    
-    // Players
-    let player1 = Player(id: 1, name: "Victor", wins: 0)
-    let player2 = Player(id: 2, name: "Felicia", wins: 0)
-    
     // Game
     var currentPlayer: Player!
     var gameRunning = true
@@ -33,8 +22,22 @@ class Game {
         /* Diagonal */ [0, 4, 8], [2, 4, 6]
     ]
     
-    func initialize(_ itemButtons: [UIButton]!, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
+    // Players
+    var player1: Player!
+    var player2: Player!
+    
+    // Views
+    var itemButtons: [UIButton]!
+    
+    var turnLabel: UILabel!
+    var xLabel: UILabel!
+    var yLabel: UILabel!
+    
+    func initialize(_ player1: Player, _ player2: Player,_ itemButtons: [UIButton]!, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
         currentPlayer = player1
+        
+        self.player1 = player1
+        self.player2 = player2
         
         self.itemButtons = itemButtons
         self.turnLabel = turnLabel
