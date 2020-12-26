@@ -34,7 +34,7 @@
                                             <action selector="playButton:" destination="eV7-y5-x7g" eventType="touchUpInside" id="yKM-E5-QZv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-I8-J2k">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-I8-J2k">
                                         <rect key="frame" x="0.0" y="75" width="185" height="59"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -47,6 +47,9 @@
                                                 <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playButton:" destination="eV7-y5-x7g" eventType="touchUpInside" id="Wgt-er-5DT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -74,6 +77,7 @@
                     <navigationItem key="navigationItem" id="HD9-ZV-TA8"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="playWithFriend" id="Eak-HN-6hY"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="playWithAI" id="Vg7-RK-odt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKk-gL-SUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -282,6 +286,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nFg-ha-8O4" secondAttribute="trailing" constant="20" id="x5w-6L-jmt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aCw-ZW-XeJ"/>
                     <connections>
                         <outlet property="turnLabel" destination="tT0-5Q-ctn" id="18q-T6-2dt"/>
                         <outlet property="xLabel" destination="E6B-ta-YRi" id="Vqm-EF-Bgs"/>
@@ -304,6 +309,9 @@
             <point key="canvasLocation" x="39" y="88"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Vg7-RK-odt"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="board" width="341.33334350585938" height="341.33334350585938"/>
         <image name="cross" width="48" height="48"/>

@@ -10,6 +10,7 @@ import UIKit
 class MenuViewController: UIViewController {
 
     let seguePlayWithFriend = "playWithFriend"
+    let seguePlayWithAI = "playWithAI"
     
     var playerNamesAlert: UIAlertController!
     
@@ -28,15 +29,25 @@ class MenuViewController: UIViewController {
             textField.autocapitalizationType = .words
         }
         
-        playerNamesAlert.addTextField { textField in
-            textField.placeholder = "Player O"
-            textField.autocapitalizationType = .words
+        // Show field if two players button clicked
+        if sender.tag == 0 {
+            playerNamesAlert.addTextField { textField in
+                textField.placeholder = "Player O"
+                textField.autocapitalizationType = .words
+            }
+            
         }
         
         // Start game
         playerNamesAlert.addAction(
             UIAlertAction(title: "Play", style: .default) { action in
-                self.performSegue(withIdentifier: self.seguePlayWithFriend, sender: self)
+                if sender.tag == 0 {
+                    self.performSegue(withIdentifier: self.seguePlayWithFriend, sender: self)
+                    
+                } else {
+                    self.performSegue(withIdentifier: self.seguePlayWithAI, sender: self)
+                    
+                }
                 
             }
         )
@@ -50,17 +61,17 @@ class MenuViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Pass player names to game
+        // Play with friend
         if segue.identifier == seguePlayWithFriend {
-            let gameVC = segue.destination as! ViewController
+            let friendVC = segue.destination as! ViewController
             
             // Get player names from alert & if empty set default names
             if let player1Name = playerNamesAlert.textFields![0].text {
                 if player1Name.trimmingCharacters(in: .whitespaces).isEmpty {
-                    gameVC.player1Name = "Player X"
+                    friendVC.player1Name = "Player X"
                     
                 } else {
-                    gameVC.player1Name = player1Name
+                    friendVC.player1Name = player1Name
                     
                 }
                 
@@ -68,15 +79,38 @@ class MenuViewController: UIViewController {
             
             if let player2Name = playerNamesAlert.textFields![1].text {
                 if player2Name.trimmingCharacters(in: .whitespaces).isEmpty {
-                    gameVC.player2Name = "Player 0"
+                    friendVC.player2Name = "Player 0"
                     
                 } else {
-                    gameVC.player2Name = player2Name
+                    friendVC.player2Name = player2Name
                     
                 }
                 
             }
+            
+            friendVC.twoPlayer = true
                         
+        }
+        
+        // Play with AI
+        if segue.identifier == seguePlayWithAI {
+            let aiVC = segue.destination as! ViewController
+            
+            // Get player name from alert & if empty set default names
+            if let player1Name = playerNamesAlert.textFields![0].text {
+                if player1Name.trimmingCharacters(in: .whitespaces).isEmpty {
+                    aiVC.player1Name = "Player X"
+                    
+                } else {
+                    aiVC.player1Name = player1Name
+                    
+                }
+                
+            }
+            
+            aiVC.player2Name = "AI"
+            aiVC.twoPlayer = false
+            
         }
     
     }

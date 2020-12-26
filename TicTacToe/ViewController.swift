@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     let game = Game()
     
+    var twoPlayer = true
     var player1Name: String!
     var player2Name: String!
     
