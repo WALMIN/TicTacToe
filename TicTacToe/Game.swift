@@ -13,7 +13,7 @@ class Game {
     // Game
     var currentPlayer: Player!
     var gameRunning = true
-    var board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+    var board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
     var totalItems = 0
         
     let combinations = [
@@ -53,7 +53,7 @@ class Game {
     func place(button: UIButton){
         // Check if position is free & game is running
         if board[button.tag] == 0 && gameRunning {
-            // Add player to board & add 1 total item to the board
+            // Place player on the board
             board[button.tag] = currentPlayer.id
             totalItems += 1
             
@@ -76,6 +76,45 @@ class Game {
             
     }
     
+    func placeAI(button: UIButton) {
+        // Check if position is free & game is running
+        if board[button.tag] == 0 && gameRunning {
+            // Place player item on the board
+            board[button.tag] = player1.id
+            totalItems += 1
+            button.setBackgroundImage(UIImage(named: "cross"), for: .normal)
+            
+            // Switch to AI if board not full & tell AI to make a move
+            if totalItems < 9 {
+                makeAIMove()
+            
+            }
+            checkWin()
+                
+        }
+        
+    }
+    
+    func makeAIMove(){
+        let randomPosition = Int.random(in: 0...8)
+        
+        // Position empty, place item
+        if board[randomPosition] == 0 && gameRunning {
+            // Place AI item on the board
+            board[randomPosition] = player2.id
+            totalItems += 1
+            itemButtons[randomPosition].setBackgroundImage(UIImage(named: "nought"), for: .normal)
+            
+            checkWin()
+            
+        // Position not empty, try again
+        } else {
+            makeAIMove()
+            
+        }
+        
+    }
+    
     func checkWin() {
         // Loop through combinations
         for combination in combinations {
@@ -90,11 +129,15 @@ class Game {
                     turnLabel.text = "\(player1.name) won"
                     xLabel.text = "\(player1.name): \(player1.wins)"
                     
+                    currentPlayer = player1
+                    
                 } else {
                     player2.wins += 1
                     
                     turnLabel.text = "\(player2.name) won"
                     yLabel.text = "\(player2.name): \(player2.wins)"
+                    
+                    currentPlayer = player2
                     
                 }
                 
@@ -103,19 +146,36 @@ class Game {
                 
                 break
                 
-            } else {
-                // If the board is full there was a draw
-                if totalItems == 9 {
-                    turnLabel.text = "Draw"
-                    
-                    gameRunning = false
-                    resetGame()
-                    
-                    break
-                    
-                }
+            }
+            
+        }
+        
+        // Check if there are empty spots
+        for i in board {
+            if i == 0 {
+                gameRunning = true
+                break
                 
             }
+            
+            // If the board is full there was a draw
+            if totalItems == 9 {
+                turnLabel.text = "Draw"
+                currentPlayer = player1
+                gameRunning = false
+                resetGame()
+                
+                break
+                
+            }
+            
+        }
+        
+        // Game is not running so there was a draw
+        if !gameRunning {
+            turnLabel.text = "Draw"
+            currentPlayer = player1
+            resetGame()
             
         }
         
@@ -123,9 +183,8 @@ class Game {
     
     func resetGame() {
         // Reset game values
-        currentPlayer = player1
         gameRunning = true
-        board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+        board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
         totalItems = 0
  
         // Clear the board

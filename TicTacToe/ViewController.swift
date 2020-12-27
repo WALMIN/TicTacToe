@@ -35,7 +35,13 @@ class ViewController: UIViewController {
 
     // User place item on the board
     @IBAction func placeItem(_ sender: UIButton) {
-        game.place(button: sender)
+        if twoPlayer {
+            game.place(button: sender)
+            
+        } else {
+            game.placeAI(button: sender)
+            
+        }
         
     }
     
