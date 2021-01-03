@@ -207,8 +207,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name's turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT0-5Q-ctn">
-                                <rect key="frame" x="144" y="184.5" width="126" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <rect key="frame" x="158" y="192" width="98.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -265,6 +265,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X won" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLz-89-jdZ">
+                                <rect key="frame" x="140.5" y="155" width="133.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -279,16 +285,19 @@
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="top" secondItem="tT0-5Q-ctn" secondAttribute="bottom" constant="64" id="NH2-Yc-d3J"/>
                             <constraint firstItem="nFg-ha-8O4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tol-gC-aOr"/>
                             <constraint firstItem="q2v-rb-FoS" firstAttribute="top" secondItem="Wu7-Ug-eHX" secondAttribute="bottom" constant="32" id="WA3-D8-qVA"/>
+                            <constraint firstItem="tT0-5Q-ctn" firstAttribute="top" secondItem="fLz-89-jdZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Yko-5m-uh9"/>
                             <constraint firstItem="A1E-fU-1nL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c6B-Ce-FIi"/>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="trailing" secondItem="A1E-fU-1nL" secondAttribute="trailing" id="dPl-Ud-i7c"/>
                             <constraint firstItem="A1E-fU-1nL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hhJ-Vj-25E"/>
                             <constraint firstItem="q2v-rb-FoS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pxY-Pb-0Px"/>
+                            <constraint firstItem="fLz-89-jdZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgj-FI-pBU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nFg-ha-8O4" secondAttribute="trailing" constant="20" id="x5w-6L-jmt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aCw-ZW-XeJ"/>
                     <connections>
                         <outlet property="turnLabel" destination="tT0-5Q-ctn" id="18q-T6-2dt"/>
+                        <outlet property="winnerLabel" destination="fLz-89-jdZ" id="DgE-bS-7Vj"/>
                         <outlet property="xLabel" destination="E6B-ta-YRi" id="Vqm-EF-Bgs"/>
                         <outlet property="yLabel" destination="fy3-jH-C1i" id="LmE-nM-btB"/>
                         <outletCollection property="itemButtons" destination="KAh-di-yiE" collectionClass="NSMutableArray" id="008-VW-DjS"/>

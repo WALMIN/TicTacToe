@@ -29,20 +29,24 @@ class Game {
     // Views
     var itemButtons: [UIButton]!
     
+    var winnerLabel: UILabel!
     var turnLabel: UILabel!
     var xLabel: UILabel!
     var yLabel: UILabel!
     
-    func initialize(_ player1: Player, _ player2: Player,_ itemButtons: [UIButton]!, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
+    func initialize(_ player1: Player, _ player2: Player,_ itemButtons: [UIButton]!, _ winnerLabel: UILabel, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
         currentPlayer = player1
         
         self.player1 = player1
         self.player2 = player2
         
         self.itemButtons = itemButtons
+        self.winnerLabel = winnerLabel
         self.turnLabel = turnLabel
         self.xLabel = xLabel
         self.yLabel = yLabel
+        
+        winnerLabel.isHidden = true
         
         turnLabel.text = "\(player1.name)'s turn"
         xLabel.text = "\(player1.name): \(player1.wins)"
@@ -51,6 +55,12 @@ class Game {
     }
     
     func place(button: UIButton){
+        // Hide winner label if it's showing
+        if !winnerLabel.isHidden {
+            winnerLabel.isHidden = true
+            
+        }
+        
         // Check if position is free & game is running
         if board[button.tag] == 0 && gameRunning {
             // Place player on the board
@@ -77,6 +87,12 @@ class Game {
     }
     
     func placeAI(button: UIButton) {
+        // Hide winner label if it's showing
+        if !winnerLabel.isHidden {
+            winnerLabel.isHidden = true
+            
+        }
+        
         // Check if position is free & game is running
         if board[button.tag] == 0 && gameRunning {
             // Place player item on the board
@@ -126,7 +142,8 @@ class Game {
                 if board[combination[0]] == 1 {
                     player1.wins += 1
                     
-                    turnLabel.text = "\(player1.name) won"
+                    winnerLabel.isHidden = false
+                    winnerLabel.text = "\(player1.name) won"
                     xLabel.text = "\(player1.name): \(player1.wins)"
                     
                     currentPlayer = player1
@@ -134,7 +151,8 @@ class Game {
                 } else {
                     player2.wins += 1
                     
-                    turnLabel.text = "\(player2.name) won"
+                    winnerLabel.isHidden = false
+                    winnerLabel.text = "\(player2.name) won"
                     yLabel.text = "\(player2.name): \(player2.wins)"
                     
                     currentPlayer = player2
@@ -182,6 +200,8 @@ class Game {
     }
     
     func resetGame() {
+        turnLabel.text = "\(currentPlayer.name)'s turn"
+        
         // Reset game values
         gameRunning = true
         board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

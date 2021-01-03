@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var itemButtons: [UIButton]!
     
+    @IBOutlet weak var winnerLabel: UILabel!
     @IBOutlet weak var turnLabel: UILabel!
     @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var yLabel: UILabel!
@@ -29,7 +30,8 @@ class ViewController: UIViewController {
         // Initialize the game
         game.initialize(Player(id: 1, name: player1Name, wins: 0),
                         Player(id: 2, name: player2Name, wins: 0),
-                        itemButtons, turnLabel, xLabel, yLabel)
+                        itemButtons, winnerLabel, turnLabel,
+                        xLabel, yLabel)
         
     }
 
