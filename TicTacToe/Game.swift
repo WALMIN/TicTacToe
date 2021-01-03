@@ -25,6 +25,7 @@ class Game {
     // Players
     var player1: Player!
     var player2: Player!
+    var twoPlayer = true
     
     // Views
     var itemButtons: [UIButton]!
@@ -34,11 +35,12 @@ class Game {
     var xLabel: UILabel!
     var yLabel: UILabel!
     
-    func initialize(_ player1: Player, _ player2: Player,_ itemButtons: [UIButton]!, _ winnerLabel: UILabel, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
+    func initialize(_ player1: Player, _ player2: Player, _ twoPlayer: Bool, _ itemButtons: [UIButton]!, _ winnerLabel: UILabel, _ turnLabel: UILabel, _ xLabel: UILabel, _ yLabel: UILabel) {
         currentPlayer = player1
         
         self.player1 = player1
         self.player2 = player2
+        self.twoPlayer = twoPlayer
         
         self.itemButtons = itemButtons
         self.winnerLabel = winnerLabel
@@ -200,8 +202,6 @@ class Game {
     }
     
     func resetGame() {
-        turnLabel.text = "\(currentPlayer.name)'s turn"
-        
         // Reset game values
         gameRunning = true
         board = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
@@ -210,6 +210,19 @@ class Game {
         // Clear the board
         for i in 0...8 {
             itemButtons[i].setBackgroundImage(nil, for: .normal)
+            
+        }
+    
+        // If playing with AI & AI won then AI makes first move
+        if !twoPlayer && currentPlayer.id == 2 {
+            makeAIMove()
+            
+            // Tell player to make a move
+            turnLabel.text = "\(player1.name)'s turn"
+            
+        } else {
+            // Show next player
+            turnLabel.text = "\(currentPlayer.name)'s turn"
             
         }
         

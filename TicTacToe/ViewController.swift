@@ -28,10 +28,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Initialize the game
-        game.initialize(Player(id: 1, name: player1Name, wins: 0),
-                        Player(id: 2, name: player2Name, wins: 0),
+        game.initialize(Player(id: 1, name: player1Name, wins: 0), Player(id: 2, name: player2Name, wins: 0), twoPlayer,
                         itemButtons, winnerLabel, turnLabel,
                         xLabel, yLabel)
+     
+        // If playing with AI then AI makes first move
+        if !twoPlayer {
+            game.makeAIMove()
+            
+        }
         
     }
 
