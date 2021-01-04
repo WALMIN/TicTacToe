@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60264A425A32FA1002DD5D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60264A325A32FA1002DD5D3 /* AboutViewController.swift */; };
 		A6096BDC2590A41400BCFC83 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BDA2590A41400BCFC83 /* MenuViewController.swift */; };
 		A67131E2258CC28B00F3AB64 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67131E1258CC28B00F3AB64 /* Game.swift */; };
 		A677DB57258BED34006EAF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A677DB56258BED34006EAF4A /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A60264A325A32FA1002DD5D3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A6096BDA2590A41400BCFC83 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A67131E1258CC28B00F3AB64 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A677DB53258BED34006EAF4A /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,16 +64,17 @@
 		A677DB55258BED34006EAF4A /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				A60264A325A32FA1002DD5D3 /* AboutViewController.swift */,
 				A677DB56258BED34006EAF4A /* AppDelegate.swift */,
 				A677DB5F258BED35006EAF4A /* Assets.xcassets */,
 				A67131E1258CC28B00F3AB64 /* Game.swift */,
 				A677DB64258BED35006EAF4A /* Info.plist */,
 				A677DB61258BED35006EAF4A /* LaunchScreen.storyboard */,
 				A677DB5C258BED34006EAF4A /* Main.storyboard */,
+				A6096BDA2590A41400BCFC83 /* MenuViewController.swift */,
 				A6B2EEE6258CD9B50005BB88 /* Player.swift */,
 				A677DB58258BED34006EAF4A /* SceneDelegate.swift */,
 				A677DB5A258BED34006EAF4A /* ViewController.swift */,
-				A6096BDA2590A41400BCFC83 /* MenuViewController.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				A677DB5B258BED34006EAF4A /* ViewController.swift in Sources */,
 				A6096BDC2590A41400BCFC83 /* MenuViewController.swift in Sources */,
 				A677DB57258BED34006EAF4A /* AppDelegate.swift in Sources */,
+				A60264A425A32FA1002DD5D3 /* AboutViewController.swift in Sources */,
 				A677DB59258BED34006EAF4A /* SceneDelegate.swift in Sources */,
 				A6B2EEE7258CD9B50005BB88 /* Player.swift in Sources */,
 				A67131E2258CC28B00F3AB64 /* Game.swift in Sources */,

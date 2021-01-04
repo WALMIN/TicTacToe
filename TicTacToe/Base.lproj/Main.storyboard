@@ -99,21 +99,57 @@
             </objects>
             <point key="canvasLocation" x="-807" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="lnV-vM-ADF">
             <objects>
-                <viewController id="wc3-9G-cpj" sceneMemberID="viewController">
+                <viewController id="wc3-9G-cpj" customClass="AboutViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZu-JF-pDc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-Mx-O0u">
+                                <rect key="frame" x="135" y="20" width="144" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="9hC-UO-JUy"/>
+                                    <constraint firstAttribute="width" constant="144" id="DhI-hP-9kg"/>
+                                </constraints>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="App developed by Victor Bergene for &quot;Tre-i-rad ios&quot; at ITHS Stockholm." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sao-EP-1CN">
+                                <rect key="frame" x="87" y="172" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="2H8-7N-uSu">
+                                <rect key="frame" x="148" y="760" width="118" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPQ-ZK-PKv">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <state key="normal" image="code"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npW-u9-sFe">
+                                        <rect key="frame" x="70" y="0.0" width="48" height="48"/>
+                                        <state key="normal" image="web"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BBL-Vp-F6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SQ0-Mx-O0u" firstAttribute="top" secondItem="BBL-Vp-F6j" secondAttribute="top" constant="20" id="5yg-Ql-LDz"/>
+                            <constraint firstItem="2H8-7N-uSu" firstAttribute="centerX" secondItem="bZu-JF-pDc" secondAttribute="centerX" id="ZHK-1l-lnF"/>
+                            <constraint firstItem="2H8-7N-uSu" firstAttribute="bottom" secondItem="BBL-Vp-F6j" secondAttribute="bottom" id="gpE-X4-ai3"/>
+                            <constraint firstItem="SQ0-Mx-O0u" firstAttribute="centerX" secondItem="bZu-JF-pDc" secondAttribute="centerX" id="lIE-Yd-lp5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Vw-0r-TJh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gek-IS-DGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="-398"/>
+            <point key="canvasLocation" x="155.07246376811597" y="-260.49107142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -346,18 +382,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="tvi-FE-Cvn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="116" y="297"/>
+            <point key="canvasLocation" x="159" y="435"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Vg7-RK-odt"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
         <image name="about" width="48" height="48"/>
         <image name="board" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="code" width="48" height="48"/>
         <image name="cross" width="48" height="48"/>
         <image name="exit" width="48" height="48"/>
         <image name="nought" width="48" height="48"/>
+        <image name="web" width="48" height="48"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
