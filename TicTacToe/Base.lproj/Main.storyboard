@@ -114,10 +114,14 @@
                                     <constraint firstAttribute="width" constant="144" id="DhI-hP-9kg"/>
                                 </constraints>
                             </imageView>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="App developed by Victor Bergene for &quot;Tre-i-rad ios&quot; at ITHS Stockholm." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sao-EP-1CN">
-                                <rect key="frame" x="87" y="172" width="240" height="128"/>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sao-EP-1CN">
+                                <rect key="frame" x="87" y="172" width="240" height="580"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">App developed by Victor Bergene for "Tre-i-rad ios" at ITHS Stockholm.
+
+
+Version 1.0</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -128,10 +132,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPQ-ZK-PKv">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                         <state key="normal" image="code"/>
+                                        <connections>
+                                            <action selector="linkButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="kd5-ZK-9dw"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npW-u9-sFe">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npW-u9-sFe">
                                         <rect key="frame" x="70" y="0.0" width="48" height="48"/>
                                         <state key="normal" image="web"/>
+                                        <connections>
+                                            <action selector="linkButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="4yd-se-6QO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

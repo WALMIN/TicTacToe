@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A60264A425A32FA1002DD5D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60264A325A32FA1002DD5D3 /* AboutViewController.swift */; };
+		A60264A825A344A0002DD5D3 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60264A725A344A0002DD5D3 /* Tools.swift */; };
 		A6096BDC2590A41400BCFC83 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BDA2590A41400BCFC83 /* MenuViewController.swift */; };
 		A67131E2258CC28B00F3AB64 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67131E1258CC28B00F3AB64 /* Game.swift */; };
 		A677DB57258BED34006EAF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A677DB56258BED34006EAF4A /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A60264A325A32FA1002DD5D3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		A60264A725A344A0002DD5D3 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		A6096BDA2590A41400BCFC83 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A67131E1258CC28B00F3AB64 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A677DB53258BED34006EAF4A /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				A6B2EEE6258CD9B50005BB88 /* Player.swift */,
 				A677DB58258BED34006EAF4A /* SceneDelegate.swift */,
 				A677DB5A258BED34006EAF4A /* ViewController.swift */,
+				A60264A725A344A0002DD5D3 /* Tools.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				A677DB59258BED34006EAF4A /* SceneDelegate.swift in Sources */,
 				A6B2EEE7258CD9B50005BB88 /* Player.swift in Sources */,
 				A67131E2258CC28B00F3AB64 /* Game.swift in Sources */,
+				A60264A825A344A0002DD5D3 /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
