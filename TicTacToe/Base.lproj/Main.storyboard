@@ -107,12 +107,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-Mx-O0u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-Mx-O0u">
                                 <rect key="frame" x="135" y="20" width="144" height="144"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="9hC-UO-JUy"/>
                                     <constraint firstAttribute="width" constant="144" id="DhI-hP-9kg"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sao-EP-1CN">
                                 <rect key="frame" x="87" y="172" width="240" height="580"/>
@@ -405,6 +410,7 @@ Version 1.0</string>
         <image name="code" width="48" height="48"/>
         <image name="cross" width="48" height="48"/>
         <image name="exit" width="48" height="48"/>
+        <image name="icon" width="341.33334350585938" height="341.33334350585938"/>
         <image name="nought" width="48" height="48"/>
         <image name="web" width="48" height="48"/>
         <systemColor name="labelColor">
