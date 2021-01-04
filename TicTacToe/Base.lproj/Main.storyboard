@@ -63,6 +63,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-9i-yZU">
+                                <rect key="frame" x="362" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="J9Y-TC-Y2L"/>
+                                    <constraint firstAttribute="height" constant="32" id="tEk-44-m4O"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="about"/>
+                                <connections>
+                                    <action selector="exitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12J-qL-FWj"/>
+                                    <segue destination="wc3-9G-cpj" kind="show" id="Unw-PU-3TC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UZQ-cV-wvv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,7 +84,9 @@
                             <constraint firstItem="g9R-rD-nhW" firstAttribute="centerY" secondItem="frS-fu-OGV" secondAttribute="centerY" id="FCZ-94-1YE"/>
                             <constraint firstItem="pGO-lD-Fv7" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="H4O-3u-8d8"/>
                             <constraint firstItem="g9R-rD-nhW" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="MFE-ew-7iz"/>
+                            <constraint firstItem="L3h-9i-yZU" firstAttribute="top" secondItem="UZQ-cV-wvv" secondAttribute="top" id="TEp-dR-lu0"/>
                             <constraint firstItem="g9R-rD-nhW" firstAttribute="top" secondItem="pGO-lD-Fv7" secondAttribute="bottom" constant="64" id="b1c-aK-52I"/>
+                            <constraint firstItem="UZQ-cV-wvv" firstAttribute="trailing" secondItem="L3h-9i-yZU" secondAttribute="trailing" constant="20" id="c79-cL-Z0k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HD9-ZV-TA8"/>
@@ -83,6 +98,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKk-gL-SUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-807" y="88"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lnV-vM-ADF">
+            <objects>
+                <viewController id="wc3-9G-cpj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZu-JF-pDc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BBL-Vp-F6j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Vw-0r-TJh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gek-IS-DGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-398"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -315,13 +346,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="tvi-FE-Cvn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="39" y="88"/>
+            <point key="canvasLocation" x="116" y="297"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Vg7-RK-odt"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="about" width="48" height="48"/>
         <image name="board" width="341.33334350585938" height="341.33334350585938"/>
         <image name="cross" width="48" height="48"/>
         <image name="exit" width="48" height="48"/>
