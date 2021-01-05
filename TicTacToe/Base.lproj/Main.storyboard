@@ -16,8 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-9i-yZU">
+                                <rect key="frame" x="362" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="J9Y-TC-Y2L"/>
+                                    <constraint firstAttribute="height" constant="32" id="tEk-44-m4O"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="about"/>
+                                <connections>
+                                    <action selector="exitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12J-qL-FWj"/>
+                                    <segue destination="wc3-9G-cpj" kind="show" id="Unw-PU-3TC"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g9R-rD-nhW">
-                                <rect key="frame" x="114.5" y="381" width="185" height="134"/>
+                                <rect key="frame" x="114.5" y="492" width="185" height="134"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zah-BQ-Qle">
                                         <rect key="frame" x="0.0" y="0.0" width="185" height="59"/>
@@ -57,36 +70,37 @@
                                     <constraint firstItem="Ubt-I8-J2k" firstAttribute="leading" secondItem="Zah-BQ-Qle" secondAttribute="leading" id="bjG-Ob-qSE"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGO-lD-Fv7">
-                                <rect key="frame" x="109.5" y="288" width="195.5" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your play mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGO-lD-Fv7">
+                                <rect key="frame" x="104" y="436" width="206.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3h-9i-yZU">
-                                <rect key="frame" x="362" y="44" width="32" height="32"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="q05-9Y-Yoe">
+                                <rect key="frame" x="127" y="212" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="J9Y-TC-Y2L"/>
-                                    <constraint firstAttribute="height" constant="32" id="tEk-44-m4O"/>
+                                    <constraint firstAttribute="width" constant="160" id="974-TA-34m"/>
+                                    <constraint firstAttribute="height" constant="160" id="tEQ-6E-byS"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" image="about"/>
-                                <connections>
-                                    <action selector="exitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12J-qL-FWj"/>
-                                    <segue destination="wc3-9G-cpj" kind="show" id="Unw-PU-3TC"/>
-                                </connections>
-                            </button>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UZQ-cV-wvv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="g9R-rD-nhW" firstAttribute="centerY" secondItem="frS-fu-OGV" secondAttribute="centerY" id="FCZ-94-1YE"/>
-                            <constraint firstItem="pGO-lD-Fv7" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="H4O-3u-8d8"/>
-                            <constraint firstItem="g9R-rD-nhW" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="MFE-ew-7iz"/>
+                            <constraint firstItem="pGO-lD-Fv7" firstAttribute="centerY" secondItem="frS-fu-OGV" secondAttribute="centerY" id="71C-LC-7NW"/>
+                            <constraint firstItem="pGO-lD-Fv7" firstAttribute="top" secondItem="q05-9Y-Yoe" secondAttribute="bottom" constant="64" id="Auc-kv-Wfs"/>
+                            <constraint firstItem="pGO-lD-Fv7" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="NWK-Bh-XS7"/>
                             <constraint firstItem="L3h-9i-yZU" firstAttribute="top" secondItem="UZQ-cV-wvv" secondAttribute="top" id="TEp-dR-lu0"/>
-                            <constraint firstItem="g9R-rD-nhW" firstAttribute="top" secondItem="pGO-lD-Fv7" secondAttribute="bottom" constant="64" id="b1c-aK-52I"/>
+                            <constraint firstItem="g9R-rD-nhW" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="ZbF-sV-OjH"/>
                             <constraint firstItem="UZQ-cV-wvv" firstAttribute="trailing" secondItem="L3h-9i-yZU" secondAttribute="trailing" constant="20" id="c79-cL-Z0k"/>
+                            <constraint firstItem="q05-9Y-Yoe" firstAttribute="centerX" secondItem="frS-fu-OGV" secondAttribute="centerX" id="mUj-x7-nTe"/>
+                            <constraint firstItem="g9R-rD-nhW" firstAttribute="top" secondItem="pGO-lD-Fv7" secondAttribute="bottom" constant="32" id="sc6-zq-Gsa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HD9-ZV-TA8"/>
