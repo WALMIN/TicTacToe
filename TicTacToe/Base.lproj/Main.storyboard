@@ -108,10 +108,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-Mx-O0u">
-                                <rect key="frame" x="135" y="20" width="144" height="144"/>
+                                <rect key="frame" x="20" y="20" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="144" id="9hC-UO-JUy"/>
-                                    <constraint firstAttribute="width" constant="144" id="DhI-hP-9kg"/>
+                                    <constraint firstAttribute="height" constant="64" id="9hC-UO-JUy"/>
+                                    <constraint firstAttribute="width" constant="64" id="DhI-hP-9kg"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -119,18 +119,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sao-EP-1CN">
-                                <rect key="frame" x="87" y="172" width="240" height="580"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">App developed by Victor Bergene for "Tre-i-rad ios" at ITHS Stockholm.
-
-
-Version 1.0</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="2H8-7N-uSu">
                                 <rect key="frame" x="148" y="760" width="118" height="48"/>
                                 <subviews>
@@ -150,14 +138,85 @@ Version 1.0</string>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game developed by Victor Bergene for &quot;Tre-i-rad ios&quot; at ITHS Stockholm." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNz-2Q-ykK">
+                                <rect key="frame" x="104" y="20" width="290" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="m1T-X8-nvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Licenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EU-BM-nem">
+                                <rect key="frame" x="20" y="114" width="68.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="l90-E0-wfT">
+                                <rect key="frame" x="20" y="133.5" width="374" height="87"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-zC-kPS">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Material Design Icons"/>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="fwk-dk-hDV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCr-gV-bl3">
+                                        <rect key="frame" x="0.0" y="22" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Google Inc.">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Hu7-b2-fqQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Z-XW-jFI">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Apache License, Version 2.0">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Id2-BI-lma"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg3-t9-2xP">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="https://github.com/google/material-design-icons">
+                                            <color key="titleColor" systemColor="linkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="n0k-rv-eS3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VqH-zC-kPS" secondAttribute="trailing" id="0LM-MP-jPo"/>
+                                    <constraint firstAttribute="trailing" secondItem="PCr-gV-bl3" secondAttribute="trailing" id="IA8-E2-Oaj"/>
+                                    <constraint firstAttribute="trailing" secondItem="s4Z-XW-jFI" secondAttribute="trailing" id="hVY-37-pqz"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yg3-t9-2xP" secondAttribute="trailing" id="roX-dj-Div"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BBL-Vp-F6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="l90-E0-wfT" firstAttribute="top" secondItem="3EU-BM-nem" secondAttribute="bottom" id="23v-hq-pPl"/>
+                            <constraint firstItem="yNz-2Q-ykK" firstAttribute="leading" secondItem="SQ0-Mx-O0u" secondAttribute="trailing" constant="20" id="5JB-Yz-PM2"/>
                             <constraint firstItem="SQ0-Mx-O0u" firstAttribute="top" secondItem="BBL-Vp-F6j" secondAttribute="top" constant="20" id="5yg-Ql-LDz"/>
+                            <constraint firstItem="l90-E0-wfT" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="IRV-cH-vi6"/>
+                            <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="yNz-2Q-ykK" secondAttribute="trailing" constant="20" id="Ik1-zP-ckM"/>
+                            <constraint firstItem="yNz-2Q-ykK" firstAttribute="top" secondItem="BBL-Vp-F6j" secondAttribute="top" constant="20" id="Rm6-wu-RXp"/>
+                            <constraint firstItem="3EU-BM-nem" firstAttribute="top" secondItem="SQ0-Mx-O0u" secondAttribute="bottom" constant="30" id="WdL-ZW-Fxy"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="centerX" secondItem="bZu-JF-pDc" secondAttribute="centerX" id="ZHK-1l-lnF"/>
+                            <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="l90-E0-wfT" secondAttribute="trailing" constant="20" id="bAi-9t-mnW"/>
+                            <constraint firstItem="SQ0-Mx-O0u" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="epV-ge-P2E"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="bottom" secondItem="BBL-Vp-F6j" secondAttribute="bottom" id="gpE-X4-ai3"/>
-                            <constraint firstItem="SQ0-Mx-O0u" firstAttribute="centerX" secondItem="bZu-JF-pDc" secondAttribute="centerX" id="lIE-Yd-lp5"/>
+                            <constraint firstItem="3EU-BM-nem" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="o7D-uY-1aF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Vw-0r-TJh"/>
@@ -415,6 +474,9 @@ Version 1.0</string>
         <image name="web" width="48" height="48"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

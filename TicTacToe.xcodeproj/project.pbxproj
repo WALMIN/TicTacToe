@@ -76,8 +76,8 @@
 				A6096BDA2590A41400BCFC83 /* MenuViewController.swift */,
 				A6B2EEE6258CD9B50005BB88 /* Player.swift */,
 				A677DB58258BED34006EAF4A /* SceneDelegate.swift */,
-				A677DB5A258BED34006EAF4A /* ViewController.swift */,
 				A60264A725A344A0002DD5D3 /* Tools.swift */,
+				A677DB5A258BED34006EAF4A /* ViewController.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";

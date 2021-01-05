@@ -11,6 +11,10 @@ class AboutViewController: UIViewController {
 
     let tools = Tools()
     
+    var licenses = [
+        "https://github.com/google/material-design-icons"
+    ]
+    
     var links = [
         "https://www.github.com/WALMIN/TicTacToe",
         "https://www.walmin.com"
@@ -20,7 +24,12 @@ class AboutViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
+    @IBAction func licenseButton(_ sender: UIButton) {
+        tools.openLink(url: licenses[sender.tag])
+        
+    }
+    
     @IBAction func linkButton(_ sender: UIButton) {
         tools.openLink(url: links[sender.tag])
         
