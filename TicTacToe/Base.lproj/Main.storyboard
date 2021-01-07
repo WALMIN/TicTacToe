@@ -30,34 +30,43 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g9R-rD-nhW">
-                                <rect key="frame" x="114.5" y="492" width="185" height="134"/>
+                                <rect key="frame" x="117.5" y="492" width="179" height="136"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zah-BQ-Qle">
-                                        <rect key="frame" x="0.0" y="0.0" width="185" height="59"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Zah-BQ-Qle">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="60"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
-                                        <state key="normal" title="With a friend"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="6" maxX="18" maxY="6"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                                        <state key="normal" title="With a friend" image="twoplayer"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                                <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playButton:" destination="eV7-y5-x7g" eventType="touchUpInside" id="yKM-E5-QZv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-I8-J2k">
-                                        <rect key="frame" x="0.0" y="75" width="185" height="59"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-I8-J2k">
+                                        <rect key="frame" x="0.0" y="76" width="179" height="60"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <inset key="contentEdgeInsets" minX="32" minY="16" maxX="32" maxY="16"/>
-                                        <state key="normal" title="With an AI">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="6" maxX="18" maxY="6"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                                        <state key="normal" title="With an AI" image="ai"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageView.contentMode">
+                                                <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -78,6 +87,7 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="q05-9Y-Yoe">
                                 <rect key="frame" x="127" y="212" width="160" height="160"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="974-TA-34m"/>
                                     <constraint firstAttribute="height" constant="160" id="tEQ-6E-byS"/>
@@ -123,6 +133,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-Mx-O0u">
                                 <rect key="frame" x="20" y="20" width="64" height="64"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="9hC-UO-JUy"/>
                                     <constraint firstAttribute="width" constant="64" id="DhI-hP-9kg"/>
@@ -162,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Licenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EU-BM-nem">
-                                <rect key="frame" x="20" y="114" width="68.5" height="19.5"/>
+                                <rect key="frame" x="20" y="114" width="394" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -231,6 +242,7 @@
                             <constraint firstItem="SQ0-Mx-O0u" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="epV-ge-P2E"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="bottom" secondItem="BBL-Vp-F6j" secondAttribute="bottom" id="gpE-X4-ai3"/>
                             <constraint firstItem="3EU-BM-nem" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="o7D-uY-1aF"/>
+                            <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="3EU-BM-nem" secondAttribute="trailing" id="sHo-g7-cWT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Vw-0r-TJh"/>
@@ -479,12 +491,14 @@
     <color key="tintColor" systemColor="systemOrangeColor"/>
     <resources>
         <image name="about" width="48" height="48"/>
+        <image name="ai" width="48" height="48"/>
         <image name="board" width="341.33334350585938" height="341.33334350585938"/>
         <image name="code" width="48" height="48"/>
         <image name="cross" width="48" height="48"/>
         <image name="exit" width="48" height="48"/>
-        <image name="icon" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="icon" width="512" height="512"/>
         <image name="nought" width="48" height="48"/>
+        <image name="twoplayer" width="48" height="48"/>
         <image name="web" width="48" height="48"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
