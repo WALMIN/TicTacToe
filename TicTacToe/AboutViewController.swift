@@ -12,6 +12,7 @@ class AboutViewController: UIViewController {
     let tools = Tools()
     
     var licenses = [
+        "https://opengameart.org/content/8-bit-battle-theme-famitracker",
         "https://github.com/google/material-design-icons"
     ]
     

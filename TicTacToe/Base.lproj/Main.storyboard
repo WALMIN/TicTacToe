@@ -183,7 +183,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-zC-kPS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <state key="normal" title="Material Design Icons"/>
+                                        <state key="normal" title="Background Music"/>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="fwk-dk-hDV"/>
                                         </connections>
@@ -191,7 +191,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCr-gV-bl3">
                                         <rect key="frame" x="0.0" y="22" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Google Inc.">
+                                        <state key="normal" title="Celestialghost">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -201,17 +201,17 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Z-XW-jFI">
                                         <rect key="frame" x="0.0" y="41" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Apache License, Version 2.0">
+                                        <state key="normal" title="CC0 1.0 Universal (CC0 1.0) Public Domain Dedication">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Id2-BI-lma"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg3-t9-2xP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg3-t9-2xP">
                                         <rect key="frame" x="0.0" y="60" width="374" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="https://github.com/google/material-design-icons">
+                                        <state key="normal" title="https://opengameart.org/content/8-bit-battle-theme-famitracker">
                                             <color key="titleColor" systemColor="linkColor"/>
                                         </state>
                                         <connections>
@@ -226,6 +226,55 @@
                                     <constraint firstAttribute="trailing" secondItem="Yg3-t9-2xP" secondAttribute="trailing" id="roX-dj-Div"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Fal-os-rSH">
+                                <rect key="frame" x="20" y="228" width="374" height="87"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-Sh-AI7">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Material Design Icons"/>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="VVf-Pf-Ee8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljc-gj-Uc8">
+                                        <rect key="frame" x="0.0" y="22" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Google Inc.">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Rdm-VB-aJv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWf-jj-JHk">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Apache License, Version 2.0">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="w7a-f7-1MU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBg-qx-wCT">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="https://github.com/google/material-design-icons">
+                                            <color key="titleColor" systemColor="linkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="MDp-5z-mVP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ljc-gj-Uc8" secondAttribute="trailing" id="D0w-tA-RDa"/>
+                                    <constraint firstAttribute="trailing" secondItem="DBg-qx-wCT" secondAttribute="trailing" id="Qeq-aP-gTV"/>
+                                    <constraint firstAttribute="trailing" secondItem="HWf-jj-JHk" secondAttribute="trailing" id="VCI-PX-49h"/>
+                                    <constraint firstAttribute="trailing" secondItem="QTA-Sh-AI7" secondAttribute="trailing" id="huh-yp-qjJ"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BBL-Vp-F6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -235,14 +284,17 @@
                             <constraint firstItem="SQ0-Mx-O0u" firstAttribute="top" secondItem="BBL-Vp-F6j" secondAttribute="top" constant="20" id="5yg-Ql-LDz"/>
                             <constraint firstItem="l90-E0-wfT" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="IRV-cH-vi6"/>
                             <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="yNz-2Q-ykK" secondAttribute="trailing" constant="20" id="Ik1-zP-ckM"/>
+                            <constraint firstItem="Fal-os-rSH" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="LeW-pt-C8K"/>
                             <constraint firstItem="yNz-2Q-ykK" firstAttribute="top" secondItem="BBL-Vp-F6j" secondAttribute="top" constant="20" id="Rm6-wu-RXp"/>
                             <constraint firstItem="3EU-BM-nem" firstAttribute="top" secondItem="SQ0-Mx-O0u" secondAttribute="bottom" constant="30" id="WdL-ZW-Fxy"/>
+                            <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="Fal-os-rSH" secondAttribute="trailing" constant="20" id="YkJ-81-lAP"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="centerX" secondItem="bZu-JF-pDc" secondAttribute="centerX" id="ZHK-1l-lnF"/>
                             <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="l90-E0-wfT" secondAttribute="trailing" constant="20" id="bAi-9t-mnW"/>
                             <constraint firstItem="SQ0-Mx-O0u" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="epV-ge-P2E"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="bottom" secondItem="BBL-Vp-F6j" secondAttribute="bottom" id="gpE-X4-ai3"/>
                             <constraint firstItem="3EU-BM-nem" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="o7D-uY-1aF"/>
                             <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="3EU-BM-nem" secondAttribute="trailing" id="sHo-g7-cWT"/>
+                            <constraint firstItem="Fal-os-rSH" firstAttribute="top" secondItem="l90-E0-wfT" secondAttribute="bottom" constant="7.5" id="xJH-G2-RJw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Vw-0r-TJh"/>
