@@ -17,6 +17,7 @@
 		A677DB5E258BED34006EAF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A677DB5C258BED34006EAF4A /* Main.storyboard */; };
 		A677DB60258BED35006EAF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A677DB5F258BED35006EAF4A /* Assets.xcassets */; };
 		A677DB63258BED35006EAF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A677DB61258BED35006EAF4A /* LaunchScreen.storyboard */; };
+		A68448D825A8684700C4FE11 /* background-music.wav in Resources */ = {isa = PBXBuildFile; fileRef = A68448D725A8684700C4FE11 /* background-music.wav */; };
 		A6B2EEE7258CD9B50005BB88 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B2EEE6258CD9B50005BB88 /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		A677DB5F258BED35006EAF4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A677DB62258BED35006EAF4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A677DB64258BED35006EAF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68448D725A8684700C4FE11 /* background-music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "background-music.wav"; sourceTree = "<group>"; };
 		A6B2EEE6258CD9B50005BB88 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 		A677DB55258BED34006EAF4A /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				A68448D325A8679700C4FE11 /* Resources */,
 				A60264A325A32FA1002DD5D3 /* AboutViewController.swift */,
 				A677DB56258BED34006EAF4A /* AppDelegate.swift */,
 				A677DB5F258BED35006EAF4A /* Assets.xcassets */,
@@ -80,6 +83,14 @@
 				A677DB5A258BED34006EAF4A /* ViewController.swift */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		A68448D325A8679700C4FE11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A68448D725A8684700C4FE11 /* background-music.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			files = (
 				A677DB63258BED35006EAF4A /* LaunchScreen.storyboard in Resources */,
 				A677DB60258BED35006EAF4A /* Assets.xcassets in Resources */,
+				A68448D825A8684700C4FE11 /* background-music.wav in Resources */,
 				A677DB5E258BED34006EAF4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

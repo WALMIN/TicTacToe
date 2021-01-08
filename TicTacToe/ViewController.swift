@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var xLabel: UILabel!
     @IBOutlet weak var yLabel: UILabel!
     
+    let tools = Tools()
     let game = Game()
     
     var twoPlayer = true
@@ -37,6 +38,9 @@ class ViewController: UIViewController {
             game.makeAIMove()
             
         }
+        
+        // Play background music
+        tools.backgroundMusic.play()
         
     }
 

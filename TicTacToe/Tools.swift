@@ -7,8 +7,24 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 struct Tools {
+    
+    var backgroundMusic = AVAudioPlayer()
+    
+    init() {
+        do {
+            backgroundMusic = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "background-music", ofType: "wav")!))
+            backgroundMusic.prepareToPlay()
+            
+        }
+        catch {
+            print(error)
+            
+        }
+        
+    }
     
     func openLink(url: String){
         let webURL = url
