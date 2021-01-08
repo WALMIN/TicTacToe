@@ -180,7 +180,9 @@ class Game {
             
             // If the board is full there was a draw
             if totalItems == 9 {
-                turnLabel.text = "Draw"
+                winnerLabel.isHidden = false
+                winnerLabel.text = "Draw"
+                
                 currentPlayer = player1
                 gameRunning = false
                 resetGame()
@@ -193,7 +195,9 @@ class Game {
         
         // Game is not running so there was a draw
         if !gameRunning {
-            turnLabel.text = "Draw"
+            winnerLabel.isHidden = false
+            winnerLabel.text = "Draw"
+            
             currentPlayer = player1
             resetGame()
             
