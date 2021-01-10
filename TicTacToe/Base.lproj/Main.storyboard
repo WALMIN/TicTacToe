@@ -178,9 +178,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="l90-E0-wfT">
-                                <rect key="frame" x="20" y="133.5" width="374" height="87"/>
+                                <rect key="frame" x="20" y="133.5" width="374" height="104"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-zC-kPS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-zC-kPS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Background Music"/>
@@ -198,10 +198,12 @@
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Hu7-b2-fqQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Z-XW-jFI">
-                                        <rect key="frame" x="0.0" y="41" width="374" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="CC0 1.0 Universal (CC0 1.0) Public Domain Dedication">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="s4Z-XW-jFI">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="46"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <state key="normal">
+                                            <string key="title">CC0 1.0 Universal (CC0 1.0)
+Public Domain Dedication</string>
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -209,7 +211,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg3-t9-2xP">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="27"/>
+                                        <rect key="frame" x="0.0" y="77" width="374" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="https://opengameart.org/content/8-bit-battle-theme-famitracker">
                                             <color key="titleColor" systemColor="linkColor"/>
@@ -227,9 +229,9 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Fal-os-rSH">
-                                <rect key="frame" x="20" y="228" width="374" height="87"/>
+                                <rect key="frame" x="20" y="245" width="374" height="87"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-Sh-AI7">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-Sh-AI7">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Material Design Icons"/>
@@ -249,7 +251,7 @@
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWf-jj-JHk">
                                         <rect key="frame" x="0.0" y="41" width="374" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                         <state key="normal" title="Apache License, Version 2.0">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
@@ -276,9 +278,9 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-lT-o5x">
-                                <rect key="frame" x="20" y="323" width="374" height="87"/>
+                                <rect key="frame" x="20" y="340" width="374" height="104"/>
                                 <subviews>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t1-7g-fdS">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t1-7g-fdS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="SFX"/>
@@ -296,18 +298,20 @@
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Vso-nF-obs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCs-yH-Udq">
-                                        <rect key="frame" x="0.0" y="41" width="374" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oCs-yH-Udq">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="46"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <state key="normal">
+                                            <string key="title">Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0)</string>
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="GQ8-Gn-d9j"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdg-VG-XlD">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="27"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sdg-VG-XlD">
+                                        <rect key="frame" x="0.0" y="77" width="374" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="https://soundcloud.com/cleytonkauffman">
                                             <color key="titleColor" systemColor="linkColor"/>
