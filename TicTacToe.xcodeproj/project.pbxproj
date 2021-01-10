@@ -10,6 +10,8 @@
 		A60264A425A32FA1002DD5D3 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60264A325A32FA1002DD5D3 /* AboutViewController.swift */; };
 		A60264A825A344A0002DD5D3 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60264A725A344A0002DD5D3 /* Tools.swift */; };
 		A6096BDC2590A41400BCFC83 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6096BDA2590A41400BCFC83 /* MenuViewController.swift */; };
+		A6380C5625AB2B1C00B50F16 /* o-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = A6380C5425AB2B1C00B50F16 /* o-sound.wav */; };
+		A6380C5725AB2B1C00B50F16 /* x-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = A6380C5525AB2B1C00B50F16 /* x-sound.wav */; };
 		A67131E2258CC28B00F3AB64 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67131E1258CC28B00F3AB64 /* Game.swift */; };
 		A677DB57258BED34006EAF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A677DB56258BED34006EAF4A /* AppDelegate.swift */; };
 		A677DB59258BED34006EAF4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A677DB58258BED34006EAF4A /* SceneDelegate.swift */; };
@@ -25,6 +27,8 @@
 		A60264A325A32FA1002DD5D3 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		A60264A725A344A0002DD5D3 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		A6096BDA2590A41400BCFC83 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A6380C5425AB2B1C00B50F16 /* o-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "o-sound.wav"; sourceTree = "<group>"; };
+		A6380C5525AB2B1C00B50F16 /* x-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "x-sound.wav"; sourceTree = "<group>"; };
 		A67131E1258CC28B00F3AB64 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A677DB53258BED34006EAF4A /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A677DB56258BED34006EAF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		A68448D325A8679700C4FE11 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A6380C5425AB2B1C00B50F16 /* o-sound.wav */,
+				A6380C5525AB2B1C00B50F16 /* x-sound.wav */,
 				A68448D725A8684700C4FE11 /* background-music.wav */,
 			);
 			path = Resources;
@@ -151,9 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A677DB63258BED35006EAF4A /* LaunchScreen.storyboard in Resources */,
+				A6380C5725AB2B1C00B50F16 /* x-sound.wav in Resources */,
 				A677DB60258BED35006EAF4A /* Assets.xcassets in Resources */,
 				A68448D825A8684700C4FE11 /* background-music.wav in Resources */,
 				A677DB5E258BED34006EAF4A /* Main.storyboard in Resources */,
+				A6380C5625AB2B1C00B50F16 /* o-sound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

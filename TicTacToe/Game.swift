@@ -10,6 +10,8 @@ import UIKit
 
 class Game {
     
+    let tools = Tools()
+    
     // Game
     var currentPlayer: Player!
     var gameRunning = true
@@ -71,11 +73,17 @@ class Game {
             
             // Place item & switch player
             if currentPlayer.id == 1 {
+                // Play sound
+                tools.xSound.play()
+                
                 button.setBackgroundImage(UIImage(named: "cross"), for: .normal)
                 currentPlayer = player2
                 turnLabel.text = "\(player2.name)'s turn"
                 
             } else {
+                // Play sound
+                tools.oSound.play()
+                
                 button.setBackgroundImage(UIImage(named: "nought"), for: .normal)
                 currentPlayer = player1
                 turnLabel.text = "\(player1.name)'s turn"
@@ -97,6 +105,9 @@ class Game {
         
         // Check if position is free & game is running
         if board[button.tag] == 0 && gameRunning {
+            // Play sound
+            tools.xSound.play()
+            
             // Place player item on the board
             board[button.tag] = player1.id
             totalItems += 1
@@ -118,6 +129,9 @@ class Game {
         
         // Position empty, place item
         if board[randomPosition] == 0 && gameRunning {
+            // Play sound
+            tools.xSound.play()
+            
             // Place AI item on the board
             board[randomPosition] = player2.id
             totalItems += 1
