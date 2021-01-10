@@ -16,10 +16,10 @@ struct Tools {
     init() {
         do {
             backgroundMusic = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "background-music", ofType: "wav")!))
+            backgroundMusic.numberOfLoops = -1
             backgroundMusic.prepareToPlay()
             
-        }
-        catch {
+        } catch {
             print(error)
             
         }
