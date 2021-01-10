@@ -198,7 +198,7 @@
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Hu7-b2-fqQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Z-XW-jFI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4Z-XW-jFI">
                                         <rect key="frame" x="0.0" y="41" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="CC0 1.0 Universal (CC0 1.0) Public Domain Dedication">
@@ -247,7 +247,7 @@
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Rdm-VB-aJv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWf-jj-JHk">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWf-jj-JHk">
                                         <rect key="frame" x="0.0" y="41" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Apache License, Version 2.0">
@@ -275,13 +275,64 @@
                                     <constraint firstAttribute="trailing" secondItem="QTA-Sh-AI7" secondAttribute="trailing" id="huh-yp-qjJ"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-lT-o5x">
+                                <rect key="frame" x="20" y="323" width="374" height="87"/>
+                                <subviews>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t1-7g-fdS">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="32"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="SFX"/>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="UF7-Kk-uTZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-8e-Mvm">
+                                        <rect key="frame" x="0.0" y="22" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Cleyton Kauffman">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Vso-nF-obs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCs-yH-Udq">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="GQ8-Gn-d9j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdg-VG-XlD">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="https://soundcloud.com/cleytonkauffman">
+                                            <color key="titleColor" systemColor="linkColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Ow0-Mx-23q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xoR-8e-Mvm" secondAttribute="trailing" id="0DE-BK-wOe"/>
+                                    <constraint firstAttribute="trailing" secondItem="oCs-yH-Udq" secondAttribute="trailing" id="1ae-GZ-bN9"/>
+                                    <constraint firstAttribute="trailing" secondItem="sdg-VG-XlD" secondAttribute="trailing" id="3kj-eQ-VcH"/>
+                                    <constraint firstAttribute="trailing" secondItem="5t1-7g-fdS" secondAttribute="trailing" id="ZK8-5e-8Eg"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BBL-Vp-F6j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="X4Y-lT-o5x" firstAttribute="top" secondItem="Fal-os-rSH" secondAttribute="bottom" constant="8" symbolic="YES" id="188-ye-buP"/>
                             <constraint firstItem="l90-E0-wfT" firstAttribute="top" secondItem="3EU-BM-nem" secondAttribute="bottom" id="23v-hq-pPl"/>
                             <constraint firstItem="yNz-2Q-ykK" firstAttribute="leading" secondItem="SQ0-Mx-O0u" secondAttribute="trailing" constant="20" id="5JB-Yz-PM2"/>
                             <constraint firstItem="SQ0-Mx-O0u" firstAttribute="top" secondItem="BBL-Vp-F6j" secondAttribute="top" constant="20" id="5yg-Ql-LDz"/>
+                            <constraint firstItem="X4Y-lT-o5x" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="EoJ-WY-uJO"/>
                             <constraint firstItem="l90-E0-wfT" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="IRV-cH-vi6"/>
                             <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="yNz-2Q-ykK" secondAttribute="trailing" constant="20" id="Ik1-zP-ckM"/>
                             <constraint firstItem="Fal-os-rSH" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="LeW-pt-C8K"/>
@@ -290,6 +341,7 @@
                             <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="Fal-os-rSH" secondAttribute="trailing" constant="20" id="YkJ-81-lAP"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="centerX" secondItem="bZu-JF-pDc" secondAttribute="centerX" id="ZHK-1l-lnF"/>
                             <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="l90-E0-wfT" secondAttribute="trailing" constant="20" id="bAi-9t-mnW"/>
+                            <constraint firstItem="BBL-Vp-F6j" firstAttribute="trailing" secondItem="X4Y-lT-o5x" secondAttribute="trailing" constant="20" id="dwa-Kd-a7Z"/>
                             <constraint firstItem="SQ0-Mx-O0u" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="epV-ge-P2E"/>
                             <constraint firstItem="2H8-7N-uSu" firstAttribute="bottom" secondItem="BBL-Vp-F6j" secondAttribute="bottom" id="gpE-X4-ai3"/>
                             <constraint firstItem="3EU-BM-nem" firstAttribute="leading" secondItem="BBL-Vp-F6j" secondAttribute="leading" constant="20" id="o7D-uY-1aF"/>

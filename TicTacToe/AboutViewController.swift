@@ -13,7 +13,8 @@ class AboutViewController: UIViewController {
     
     var licenses = [
         "https://opengameart.org/content/8-bit-battle-theme-famitracker",
-        "https://github.com/google/material-design-icons"
+        "https://github.com/google/material-design-icons",
+        "https://soundcloud.com/cleytonkauffman"
     ]
     
     var links = [
