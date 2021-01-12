@@ -25,6 +25,9 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set background image for about
+        tools.setBackgroundImage(view: self.view, image: "background-game")
+        
     }
     
     @IBAction func licenseButton(_ sender: UIButton) {

@@ -50,6 +50,16 @@ struct Tools {
         
     }
     
+    // Sets the background image of page
+    func setBackgroundImage(view: UIView, image: String) {
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: image)
+        backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
+        
+        view.insertSubview(backgroundImage, at: 0)
+        
+    }
+    
     // Opens a link in web browser
     func openLink(url: String){
         let webURL = url

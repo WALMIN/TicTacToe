@@ -9,6 +9,8 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    let tools = Tools()
+    
     let seguePlayWithFriend = "playWithFriend"
     let seguePlayWithAI = "playWithAI"
     
@@ -16,6 +18,9 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        // Set background image for menu
+        tools.setBackgroundImage(view: self.view, image: "background-menu")
         
     }
 

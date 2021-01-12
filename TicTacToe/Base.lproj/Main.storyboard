@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" constant="32" id="J9Y-TC-Y2L"/>
                                     <constraint firstAttribute="height" constant="32" id="tEk-44-m4O"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="about"/>
                                 <connections>
                                     <action selector="exitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12J-qL-FWj"/>
@@ -34,11 +34,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Zah-BQ-Qle">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="60"/>
-                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="tintColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="6" maxX="18" maxY="6"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
-                                        <state key="normal" title="With a friend" image="twoplayer"/>
+                                        <state key="normal" title="With a friend" image="twoplayer">
+                                            <color key="titleColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="30"/>
@@ -54,7 +57,7 @@
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-I8-J2k">
                                         <rect key="frame" x="0.0" y="76" width="179" height="60"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="6" maxX="18" maxY="6"/>
@@ -82,12 +85,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your play mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGO-lD-Fv7">
                                 <rect key="frame" x="104" y="436" width="206.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="q05-9Y-Yoe">
                                 <rect key="frame" x="127" y="212" width="160" height="160"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="974-TA-34m"/>
                                     <constraint firstAttribute="height" constant="160" id="tEQ-6E-byS"/>
@@ -100,7 +103,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UZQ-cV-wvv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="pGO-lD-Fv7" firstAttribute="centerY" secondItem="frS-fu-OGV" secondAttribute="centerY" id="71C-LC-7NW"/>
@@ -133,7 +136,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="SQ0-Mx-O0u">
                                 <rect key="frame" x="20" y="20" width="64" height="64"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="9hC-UO-JUy"/>
                                     <constraint firstAttribute="width" constant="64" id="DhI-hP-9kg"/>
@@ -149,6 +152,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPQ-ZK-PKv">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="code"/>
                                         <connections>
                                             <action selector="linkButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="kd5-ZK-9dw"/>
@@ -156,6 +160,7 @@
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npW-u9-sFe">
                                         <rect key="frame" x="70" y="0.0" width="48" height="48"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="web"/>
                                         <connections>
                                             <action selector="linkButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="4yd-se-6QO"/>
@@ -169,12 +174,13 @@
                                     <constraint firstAttribute="height" constant="64" id="m1T-X8-nvJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Licenses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3EU-BM-nem">
                                 <rect key="frame" x="20" y="114" width="394" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="l90-E0-wfT">
@@ -192,7 +198,7 @@
                                         <rect key="frame" x="0.0" y="22" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Celestialghost">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Hu7-b2-fqQ"/>
@@ -204,7 +210,7 @@
                                         <state key="normal">
                                             <string key="title">CC0 1.0 Universal (CC0 1.0)
 Public Domain Dedication</string>
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Id2-BI-lma"/>
@@ -243,7 +249,7 @@ Public Domain Dedication</string>
                                         <rect key="frame" x="0.0" y="22" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Google Inc.">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Rdm-VB-aJv"/>
@@ -253,7 +259,7 @@ Public Domain Dedication</string>
                                         <rect key="frame" x="0.0" y="41" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                         <state key="normal" title="Apache License, Version 2.0">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="w7a-f7-1MU"/>
@@ -292,7 +298,7 @@ Public Domain Dedication</string>
                                         <rect key="frame" x="0.0" y="22" width="374" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Cleyton Kauffman">
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="Vso-nF-obs"/>
@@ -304,7 +310,7 @@ Public Domain Dedication</string>
                                         <state key="normal">
                                             <string key="title">Attribution-ShareAlike 4.0
 International (CC BY-SA 4.0)</string>
-                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="licenseButton:" destination="wc3-9G-cpj" eventType="touchUpInside" id="GQ8-Gn-d9j"/>
@@ -330,7 +336,7 @@ International (CC BY-SA 4.0)</string>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BBL-Vp-F6j"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="X4Y-lT-o5x" firstAttribute="top" secondItem="Fal-os-rSH" secondAttribute="bottom" constant="8" symbolic="YES" id="188-ye-buP"/>
                             <constraint firstItem="l90-E0-wfT" firstAttribute="top" secondItem="3EU-BM-nem" secondAttribute="bottom" id="23v-hq-pPl"/>
@@ -369,7 +375,7 @@ International (CC BY-SA 4.0)</string>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="Wu7-Ug-eHX">
                                 <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A1E-fU-1nL">
                                 <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
@@ -379,7 +385,7 @@ International (CC BY-SA 4.0)</string>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-di-yiE">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113.5"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -389,7 +395,7 @@ International (CC BY-SA 4.0)</string>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGW-7I-6He">
                                                 <rect key="frame" x="0.0" y="113.5" width="113.5" height="114"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -399,7 +405,7 @@ International (CC BY-SA 4.0)</string>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgY-ZG-o85">
                                                 <rect key="frame" x="0.0" y="227.5" width="113.5" height="113.5"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -414,9 +420,9 @@ International (CC BY-SA 4.0)</string>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3e-XB-W6P">
                                                 <rect key="frame" x="0.0" y="0.0" width="114" height="113.5"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
-                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mq3-h0-rwp"/>
@@ -424,9 +430,9 @@ International (CC BY-SA 4.0)</string>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ0-Bu-Beq">
                                                 <rect key="frame" x="0.0" y="113.5" width="114" height="114"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
-                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6U-7K-Tgx"/>
@@ -434,9 +440,9 @@ International (CC BY-SA 4.0)</string>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-MO-vZh">
                                                 <rect key="frame" x="0.0" y="227.5" width="114" height="113.5"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
-                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="placeItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QyT-UN-vW1"/>
@@ -449,7 +455,7 @@ International (CC BY-SA 4.0)</string>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QES-Ko-J9I">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113.5"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -459,7 +465,7 @@ International (CC BY-SA 4.0)</string>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wu-gK-7Bh">
                                                 <rect key="frame" x="0.0" y="113.5" width="113.5" height="114"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -469,7 +475,7 @@ International (CC BY-SA 4.0)</string>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc0-fh-wHn">
                                                 <rect key="frame" x="0.0" y="227.5" width="113.5" height="113.5"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
@@ -484,7 +490,7 @@ International (CC BY-SA 4.0)</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name's turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT0-5Q-ctn">
                                 <rect key="frame" x="158" y="192" width="98.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFg-ha-8O4">
@@ -493,7 +499,7 @@ International (CC BY-SA 4.0)</string>
                                     <constraint firstAttribute="height" constant="32" id="3T0-PK-eFc"/>
                                     <constraint firstAttribute="width" constant="32" id="Qbg-Dj-Hn1"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="exit"/>
                                 <connections>
                                     <action selector="exitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NpW-nT-DHM"/>
@@ -507,6 +513,7 @@ International (CC BY-SA 4.0)</string>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross" translatesAutoresizingMaskIntoConstraints="NO" id="g1S-9F-7HN">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <color key="tintColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="24" id="6QC-Tz-kTC"/>
                                                     <constraint firstAttribute="height" constant="24" id="N8d-oQ-FEJ"/>
@@ -514,8 +521,9 @@ International (CC BY-SA 4.0)</string>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6B-ta-YRi">
                                                 <rect key="frame" x="26" y="0.0" width="78" height="24"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -525,6 +533,7 @@ International (CC BY-SA 4.0)</string>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nought" translatesAutoresizingMaskIntoConstraints="NO" id="34p-Kf-dTS">
                                                 <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <color key="tintColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="EEu-AM-OJT"/>
                                                     <constraint firstAttribute="width" constant="24" id="q8P-AT-13p"/>
@@ -532,8 +541,9 @@ International (CC BY-SA 4.0)</string>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player O: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fy3-jH-C1i">
                                                 <rect key="frame" x="26" y="0.0" width="79.5" height="24"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -542,13 +552,14 @@ International (CC BY-SA 4.0)</string>
                             </stackView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X won" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLz-89-jdZ">
                                 <rect key="frame" x="140.5" y="155" width="133.5" height="29"/>
+                                <color key="tintColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.27058823529999998" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="Wu7-Ug-eHX" firstAttribute="bottom" secondItem="A1E-fU-1nL" secondAttribute="bottom" id="9Ve-ZW-kHU"/>
@@ -596,7 +607,7 @@ International (CC BY-SA 4.0)</string>
     <inferredMetricsTieBreakers>
         <segue reference="Vg7-RK-odt"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" systemColor="systemOrangeColor"/>
+    <color key="tintColor" red="0.93333333333333335" green="0.27058823529411763" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="about" width="48" height="48"/>
         <image name="ai" width="48" height="48"/>
@@ -613,9 +624,6 @@ International (CC BY-SA 4.0)</string>
         </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

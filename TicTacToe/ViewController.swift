@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set background image for game
+        tools.setBackgroundImage(view: self.view, image: "background-game")
+        
         // Initialize the game
         game.initialize(Player(id: 1, name: player1Name, wins: 0), Player(id: 2, name: player2Name, wins: 0), twoPlayer,
                         itemButtons, winnerLabel, turnLabel,
